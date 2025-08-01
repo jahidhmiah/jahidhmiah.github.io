@@ -118,7 +118,7 @@
     section.active {
       display: block;
     }
-    /* Generic modal style */
+    /* Generic modal overlay */
     .modal {
       position: fixed;
       top: 0; left: 0;
@@ -129,6 +129,7 @@
       justify-content: center;
       z-index: 1002;
     }
+    /* Default modal content style */
     .modal-content {
       background: #fff;
       padding: 20px;
@@ -136,11 +137,17 @@
       text-align: center;
       position: relative; /* for close icon */
     }
-    /* Name modal overrides */
+    /* Name modal specific overrides */
     #nameModal .modal-content {
       width: 75%;
       border-radius: 0;
       padding-top: 40px; /* space for enlarged image */
+    }
+    /* Disclaimer modal specific overrides: small box centered */
+    #disclaimerModal .modal-content {
+      width: 300px; /* fixed small width */
+      max-width: 90%; /* responsive */
+      border-radius: 8px; /* keep rounded corners */
     }
     .close-icon {
       font-size: 2rem; /* larger */
@@ -152,14 +159,14 @@
       border: none;
       cursor: pointer;
     }
-    /* Profile image in modal enlarged */
+    /* Profile image in About Me modal */
     #nameModal .modal-content img {
       width: 200px;
       height: 200px;
       border: 2px solid #000;
       border-radius: 50%;
       object-fit: cover;
-      margin: 0 auto 16px; /* center image */
+      margin: 0 auto 16px;
       display: block;
     }
     #openDisclaimer {
