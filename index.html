@@ -14,10 +14,10 @@
       <ul>
         <li>
           <button class="dropdown-btn" id="gtmDropdown">Go To Market ▾</button>
-          <ul class="dropdown-container" id="gtmContainer">
-            <li><a href="#" data-page="marketing.html">Marketing</a></li>
-            <li><a href="#" data-page="sales.html">Sales</a></li>
-            <li><a href="#" data-page="customer-success.html">Customer Success</a></li>
+          <ul class="dropdown-container">
+            <li><a href="#" class="dynamic-link" data-page="marketing.html">Marketing</a></li>
+            <li><a href="#" class="dynamic-link" data-page="sales.html">Sales</a></li>
+            <li><a href="#" class="dynamic-link" data-page="customer-success.html">Customer Success</a></li>
           </ul>
         </li>
       </ul>
@@ -96,25 +96,25 @@
       });
 
       // Handle dynamic page loading into .landing
-  document.querySelectorAll('#gtmContainer a').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent full page reload
-    const page = this.getAttribute('data-page');
-
-    fetch(page)
-      .then(response => {
-        if (!response.ok) throw new Error("Page not found");
-        return response.text();
-      })
-      .then(html => {
-        document.querySelector('.landing').innerHTML = html;
-      })
-      .catch(err => {
-        document.querySelector('.landing').innerHTML = `<p style="color:red;">Failed to load content.</p>`;
-        console.error(err);
+       document.querySelectorAll('.dynamic-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const page = this.getAttribute('data-page');
+      
+          fetch(page)
+            .then(response => {
+              if (!response.ok) throw new Error("Page not found");
+              return response.text();
+            })
+            .then(html => {
+              document.querySelector('.landing').innerHTML = html;
+            })
+            .catch(err => {
+              document.querySelector('.landing').innerHTML = `<p style="color:red;">Failed to load content.</p>`;
+              console.error(err);
+            });
+        });
       });
-  });
-});
     </script>
   </body>
 </html>
