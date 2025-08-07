@@ -46,7 +46,12 @@
         list-style: none;
         padding: 0 0 0 15px;
         margin: 0;
-        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      .dropdown-container.open {
+        max-height: 500px; /* Or something large enough to fit the content */
       }
       .dropdown-container li a {
         display: block;
