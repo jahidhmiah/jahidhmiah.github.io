@@ -59,7 +59,10 @@
         color: #000;
         text-decoration: none;
       }
-      .dropdown-container li a:hover { background-color: #e0e0e0; }
+      .dropdown-container li a:hover { 
+        background-color: #FEFDE3; 
+        border-radius: 12px;
+      }
 
       /* Header */
       .top-bar {
