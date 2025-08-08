@@ -13,8 +13,22 @@
       <button class="toggle-btn" id="toggleSidebar">☰</button>
       <ul>
         <li>
-          <button class="dropdown-btn" id="gtmDropdown">Go To Market ▾</button>
-          <ul class="dropdown-container" id="gtmContainer">
+          <button class="dropdown-btn">
+            <span class="arrow">▶</span>
+            Introduction
+          </button>
+          <ul class="dropdown-container">
+            <li><a href="#" class="dynamic-link" data-page="pages/landing.html">Landing Page</a></li>
+            <li><a href="#" class="dynamic-link" data-page="pages/resume.html">Resume</a></li>
+            <li><a href="#" class="dynamic-link" data-page="pages/ContactMe.html">Contact Me</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="dropdown-btn">
+            <span class="arrow">▶</span>
+            Go To Market
+          </button>
+          <ul class="dropdown-container">
             <li><a href="#" class="dynamic-link" data-page="marketing.html">Marketing</a></li>
             <li><a href="#" class="dynamic-link" data-page="sales.html">Sales</a></li>
             <li><a href="#" class="dynamic-link" data-page="customer-success.html">Customer Success</a></li>
@@ -82,11 +96,15 @@
         // Sidebar collapse/expand
         document.getElementById('toggleSidebar').addEventListener('click', () => document.body.classList.toggle('collapsed'));
 
-        // GTM dropdown toggle
-        document.getElementById('gtmDropdown').addEventListener('click', () => {
-          const container = document.getElementById('gtmContainer');
-          container.style.display = container.style.display === 'block' ? 'none' : 'block';
-          container.classList.toggle('open');
+        //Dropdown toggle
+        document.querySelectorAll('.dropdown-btn').forEach(btn => {
+        const container = btn.nextElementSibling;  // the <ul> right after the button
+
+        btn.addEventListener('click', () => {
+          btn.classList.toggle('open');         // rotate this button’s arrow
+          container.classList.toggle('open');   // slide this menu open/closed
+        });
+
         });
 
 
@@ -117,6 +135,7 @@
             });
         });
       });
+
     </script>
   </body>
 </html>

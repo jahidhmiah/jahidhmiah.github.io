@@ -9,11 +9,10 @@ html, body {
 /* Sidebar styles */
 .sidebar {
   position: fixed;
-  top: 60px;          /* adjusted to fill gap after nav removal */
+  top: 70px;          /* adjusted to fill gap after nav removal */
   left: 0;
   bottom: 0;
   width: 200px;
-  background-color: #fdfdf5;
   border-right: 1px solid #ccc;
   padding: 10px;
   box-sizing: border-box;
@@ -26,6 +25,7 @@ body.collapsed .sidebar ul { display: none; }
 .toggle-btn {
   display: block;
   margin-bottom: 10px;
+  background-color: #fdfdf5;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
@@ -53,24 +53,32 @@ body.collapsed .sidebar ul { display: none; }
   margin: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 .dropdown-container.open {
   max-height: 500px; /* Or something large enough to fit the content */
+  transition: max-height 0.5s ease-out;
 }
 .dropdown-container li a {
   display: block;
-  padding: 6px 0;
+  padding: 6px 0 6px 15px;
   color: #000;
   text-decoration: none;
-  box-shadow: 0 0 0 rgba(0,0,0,0);
 }
 .dropdown-container li a:hover { 
   background-color: #E0E0E0; 
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
+.arrow {
+  display: inline-block;
+  margin-left: 0.5em;
+  transition: transform 0.3s ease;
+  /* starting arrow points right (0°) */
+  transform: rotate(0deg);
+}
+.dropdown-btn.open .arrow {
+  transform: rotate(90deg);
+}
 /* Header */
 .top-bar {
   position: fixed;
