@@ -1,1 +1,1 @@
-CampaignID,LeadID,Date
+CampaignMemberID,CampaignID,LeadID,Date

@@ -1,16 +1,16 @@
 {
     "Event": {
-        "CampaignID": "campaign_id",
+        "CampaignID": "ID0000000001",
         "Campaign Name": "campaign_name",
         "Campaign Type": "campaign_type",
         "Campaign Sub Type": "campaign_sub_type",
-        "Campaign Start Date": "2025-06-01"
+        "Campaign Start Date": "2023-06-01"
     },
     "Content": {
-        "CampaignID": "campaign_id",
+        "CampaignID": "ID0000000001",
         "Campaign Name": "campaign_name",
         "Campaign Type": "campaign_type",
         "Campaign Sub Type": "campaign_sub_type",
-        "Campaign Start Date": "2025-06-01"
+        "Campaign Start Date": "2023-06-01"
     }
 }
