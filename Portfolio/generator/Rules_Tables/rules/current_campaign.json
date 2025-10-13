@@ -1,0 +1,16 @@
+{
+    "Event": {
+        "CampaignID": "ID0000000032",
+        "Campaign Name": "Event_2025-08_Trade_show",
+        "Campaign Type": "Event",
+        "Campaign Sub Type": "Trade_show",
+        "Campaign Start Date": "2025-08-12"
+    },
+    "Content": {
+        "CampaignID": "ID0000000030",
+        "Campaign Name": "Content_2025-07_White_Paper",
+        "Campaign Type": "Content",
+        "Campaign Sub Type": "White_Paper",
+        "Campaign Start Date": "2025-07-09"
+    }
+}
