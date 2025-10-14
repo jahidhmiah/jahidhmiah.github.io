@@ -1,9 +1,7 @@
 import { Stack } from "expo-router";
 
-export default function RootLayout() {
+export default function Layout() {
   return (
-    <Stack>
-      {/* Screens inside `app/` are auto-registered */}
-    </Stack>
+    <Stack screenOptions={{ headerShown: false }} />
   );
 }
