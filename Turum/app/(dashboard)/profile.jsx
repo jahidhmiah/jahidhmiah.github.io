@@ -1,18 +1,17 @@
 import { StyleSheet, TextInput } from 'react-native'
 import React from 'react'
 import {Link} from 'expo-router'
-import {ThemedView, ThemedCard, ThemedText} from '../components/Themed';
+import {ThemedView, ThemedCard, ThemedText} from '../../components/Themed';
 
-const Workouts = () => {
+const Profile = () => {
   return (
     <ThemedView style = {styles.container}>
-      <ThemedText style = {styles.title}>Workouts</ThemedText>
-      <ThemedText>Tester</ThemedText>
+      <ThemedText style = {styles.title}>Profile</ThemedText>
     </ThemedView>
   )
 }
 
-export default Workouts
+export default Profile
 
 const styles = StyleSheet.create({
     container: {

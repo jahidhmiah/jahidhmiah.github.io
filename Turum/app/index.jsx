@@ -17,6 +17,18 @@ const Home = () => {
         <ThemedText style = {styles.title}>
             Turum
         </ThemedText>
+
+        <Link href="/login" style={styles.link}>
+        <ThemedText>Login</ThemedText>
+        </Link>
+
+        <Link href="/tools" style={styles.link}>
+            <ThemedText>Tools</ThemedText>
+        </Link>
+
+        <Link href="/profile" style={styles.link}>
+            <ThemedText>Profile</ThemedText>
+        </Link>
     </ThemedView>
   )
 }
