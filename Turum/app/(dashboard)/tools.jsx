@@ -5,7 +5,7 @@ import {ThemedView, ThemedCard, ThemedText} from '../../components/Themed';
 
 const Tools = () => {
   return (
-    <ThemedView style = {styles.container} safe = {true}>
+    <ThemedView style = {styles.container} safe = {true} showHeader = {true}>
         <ScrollView>
           <ThemedText style = {styles.title}>Tools</ThemedText>
         </ScrollView>
@@ -18,15 +18,11 @@ export default Tools
 const styles = StyleSheet.create({
     container: {
         flex : 1,
-        alignItems: 'center',
-        justifyContent: 'center',  
+        paddingLeft: 50,  
+        textAlign: 'left'
     },
     title: {
         fontWeight: "bold",
         fontSize: 18,
     },
-    link: {
-        marginVertical: 10,
-        backgroundColor: "A8E6CF"
-    }
 })

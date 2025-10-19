@@ -1,10 +1,12 @@
 import { Tabs } from "expo-router";
 import { Text, View, useColorScheme, Image } from "react-native";
-import { Theme } from "../../constants/colors";
+import { useTheme } from "../../constants/colors";
 import { Ionicons } from "@expo/vector-icons";
 
 export default function DashboardLayout() {
-  return (
+    const Theme = useTheme()
+    
+    return (
         <Tabs screenOptions={{ 
                 headerTransparent: true,
                 headerTitleAlign: 'left',
@@ -27,16 +29,16 @@ export default function DashboardLayout() {
                 tabBarStyle: { 
                     backgroundColor: Theme.primary
                 },
-                tabBarActiveTintColor: Theme.background,
+                tabBarActiveTintColor: Theme.text,
                 tabBarInactiveTintColor: Theme.text, 
             }} > 
 
             <Tabs.Screen 
                 name="profile" 
                 options={{ title: "Profile",
-                tabBarIcon: ({color , size}) => (
+                tabBarIcon: ({focused, color , size}) => (
                     <Ionicons 
-                        name="person" 
+                        name={focused ? 'person' : 'person-outline'}
                         size={size} 
                         color={color}
                      />
@@ -47,9 +49,9 @@ export default function DashboardLayout() {
             <Tabs.Screen 
                 name="tools" 
                 options={{ title: "Tools",
-                tabBarIcon: ({ color, size}) => (
+                tabBarIcon: ({focused, color, size}) => (
                     <Ionicons 
-                        name="barbell" 
+                        name={focused ? 'barbell' : 'barbell-outline'}
                         size={size} 
                         color={color}
                      />

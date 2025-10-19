@@ -1,9 +1,10 @@
 import { Stack } from "expo-router"
-import { Theme } from "../constants/colors"
+import { useTheme } from "../constants/colors"
 import { useColorScheme } from "react-native"
 import { StatusBar } from "expo-status-bar"
 
 export default function RootLayout() {
+  const Theme = useTheme()
 
   return (
     <>
