@@ -2,11 +2,12 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import React from 'react';
 import {Link} from 'expo-router';
 import {ThemedView, ThemedCard, ThemedText} from '../components/Themed';
-import {Theme} from '../constants/colors';
+import {useTheme} from '../constants/colors';
 import Logo from '../assets/img/logo.png';
 
 
 const Home = () => {
+    const Theme = useTheme()
   return (
     <ThemedView style = {[styles.container]}>
         <Image 
