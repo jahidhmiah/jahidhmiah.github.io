@@ -1,0 +1,80 @@
+{
+  "returnValue": {
+    "address": "3800 North Central Avenue Suite 1700, Phoenix, AZ 85012",
+    "affiliation": "",
+    "affiliationEndDate": "",
+    "affiliationStartDate": "",
+    "billingLatitude": "33.491691",
+    "billingLongitude": "-112.07407",
+    "bureau": "Medical",
+    "certificatePublicURL": "https://azdhs-licensing.my.salesforce.com/sfc/p/t0000000GzfY/a/cs00000UNh4c/NjniDlo.HpeeIGkV8FhdFs623T7_ZLGJcGfHrqpNILY",
+    "chiefAdministrativeOfficer": "JOSETTE SULLINS",
+    "cultivationAddress": " ",
+    "dba": "Go Dehp LLC",
+    "effectiveDate": "8/2/2025",
+    "exempt": false,
+    "expirationDate": "8/1/2026",
+    "externalFacilitySearchId": "MED11089",
+    "facilityId": "0018y00000B1s8TAAR",
+    "facilityServices": [
+      {
+        "Id": "a4ocs0000006SVEAA2",
+        "Service_Type__c": "Behavioral health services"
+      },
+      {
+        "Id": "a4ocs0000006SVFAA2",
+        "Service_Type__c": "Counseling"
+      },
+      {
+        "Id": "a4ocs0000006SVGAA2",
+        "Service_Type__c": "Court-ordered DUI education"
+      },
+      {
+        "Id": "a4ocs0000006SVHAA2",
+        "Service_Type__c": "Court-ordered DUI screening"
+      },
+      {
+        "Id": "a4ocs0000006SVIAA2",
+        "Service_Type__c": "Court-ordered DUI treatment"
+      },
+      {
+        "Id": "a4ocs0000007uNFAAY",
+        "Service_Type__c": "Physical health services"
+      },
+      {
+        "Id": "a4ocs0000006SVJAA2",
+        "Service_Type__c": "Pre-petition screening"
+      }
+    ],
+    "facilityStatus": "Active",
+    "facilityType": "Outpatient Treatment Center",
+    "hasRelatedFacilities": false,
+    "isMothershipFacility": true,
+    "legalName": "17th Floor Vip",
+    "license": "OTC13490",
+    "licenseOwner": "GO DEHP LLC",
+    "licenses": [
+      {
+        "certificatePublicURL": "https://azdhs-licensing.my.salesforce.com/sfc/p/t0000000GzfY/a/cs00000UNh4c/NjniDlo.HpeeIGkV8FhdFs623T7_ZLGJcGfHrqpNILY",
+        "effectiveDate": "8/2/2025",
+        "expirationDate": "8/1/2026",
+        "license": "OTC13490",
+        "licenseStatus": "Active",
+        "licenseType": "Outpatient Treatment Center",
+        "services": ""
+      }
+    ],
+    "licenseStatus": "Active",
+    "mailingAddress": "3800 North Central Avenue, Phoenix, AZ 85012",
+    "manufactureAddress": " ",
+    "phone": "6026070552",
+    "physicalCity": "Phoenix",
+    "physicalState": "AZ",
+    "physicalZip": "85012",
+    "program": "Health Care",
+    "shippingLatitude": "-112.07555103678",
+    "subType": "Outpatient Treatment Center",
+    "type": "Outpatient Treatment Center"
+  },
+  "cacheable": true
+}
